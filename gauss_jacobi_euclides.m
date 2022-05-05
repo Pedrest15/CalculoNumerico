@@ -1,4 +1,7 @@
 function [x,k]=gauss_jacobi_euclides(A,b,x0,tol)
+% aplica o método de gauss-jacobi para achar a solução de um sistema linear quadrado
+% utiliza o erro relativo como critério de parada e a norma euclidiana (padrão do MatLab)
+
   n = size(A,1);
   D = diag(diag(A));
   C = eye(n)-D\A;
@@ -15,3 +18,4 @@ function [x,k]=gauss_jacobi_euclides(A,b,x0,tol)
     disp('Erro: o metodo nao converge.');
     return;
   end
+endfunction
