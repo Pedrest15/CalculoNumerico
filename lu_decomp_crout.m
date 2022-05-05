@@ -1,4 +1,5 @@
 function [L,U] = lu_decomp_crout(A)
+% faz a decomposição LU de uma matriz quadrada a partir do método de Crout
 % A: matriz quadrada
 % L, U: matrizes triang. inf. e sup., respectivamente
 n = size(A,1);
