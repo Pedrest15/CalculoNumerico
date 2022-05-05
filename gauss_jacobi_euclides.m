@@ -1,6 +1,10 @@
 function [x,k]=gauss_jacobi_euclides(A,b,x0,tol)
-% aplica o método de gauss-jacobi para achar a solução de um sistema linear quadrado
+% aplica o método de gauss-jacobi para achar a solução Ax = b de um sistema linear quadrado
 % utiliza o erro relativo como critério de parada e a norma euclidiana (padrão do MatLab)
+% A: matriz quadrada
+% b: vetor resultante do sistema
+% x0: chute inicial da solução (geralmente o vetor nulo)
+% tol: erro tolerado na solução
 
   n = size(A,1);
   D = diag(diag(A));
