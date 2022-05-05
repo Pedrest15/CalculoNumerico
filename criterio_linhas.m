@@ -1,6 +1,7 @@
 function y = criterio_linhas(A)
 % aplica o critério das linhas para saber se uma série vai convergir no critério de Gauss-Jacobi
 % se retornar 1, converge, senão, inconclusivo. Condição necessária, mas não suficiente
+% A: matriz quadrada
   n = size(A,1);
   y = 1;
   
