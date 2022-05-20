@@ -1,7 +1,8 @@
-function [Q,R] = qr_decomp(A) %decomposição QR
+function [Q,R] = qr_decomp(A)
 %aplica a decomposição QR em uma matriz quadrada A
 %Q: matriz (m,n)
 %R: matriz triangular superior
+
 [m,n] = size(A);
 V = A;
 Q = zeros(m,n);
