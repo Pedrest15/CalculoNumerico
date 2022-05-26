@@ -38,13 +38,6 @@ while button~=27
     aux = y0;
 	end
 	if button==32
-		% TAREFAS
-		% 1. Implemente uma iteracao do metodo das potencias
-		%     pra cada vez que a tecla espaco for pressionada. 
-		%     Use o vetor x = [u; v] como chute inicial.
-		% 2. Visualize o vetor resultante a cada iteracao.
-		% 3. Imprima os erros de aproxima碘o do autovalor e 
-		%     de alinhamento do autovetor a cada iteracao.	)
     x = A*y0;
     y = x/norm(x);
     erro_autovetor = abs(abs(y0'*y)-1);
